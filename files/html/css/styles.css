@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.circle {
+  background-color: #ffcc00;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px 2px #d0cec6;
+  background: linear-gradient(45deg, #ffcc00, #ff6600);
+}
