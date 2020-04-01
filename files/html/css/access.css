@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.access {
+  padding: 90 0 60px;
+  color: #5a5c5f;
+}
+
+.access-title {
+  margin-bottom: 15px;
+}
+
+.access-text {
+  margin-bottom: 10px;
+}
