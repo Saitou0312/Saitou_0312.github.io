@@ -43,6 +43,5 @@
 }
 
 .details :hover {
-  transition: all 3s;
   opacity: 0.3;
 }
