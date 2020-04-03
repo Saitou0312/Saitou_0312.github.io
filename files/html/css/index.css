@@ -38,10 +38,11 @@
 
 .details {
   text-decoration: none;
+  color: skyblue;
   opacity: 1;
 }
 
 .details :hover {
-  transition: 0.3s;
+  transition: all 3s;
   opacity: 0.3;
 }
