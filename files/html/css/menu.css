@@ -36,3 +36,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.sakuhin {
+  text-align: center;
+  font-size: 30px;
+}
