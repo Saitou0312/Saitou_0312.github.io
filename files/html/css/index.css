@@ -42,7 +42,3 @@
   text-decoration: none;
   color: blue;
 }
-
-.details :hover {
-  opacity: 0.3;
-}
