@@ -46,18 +46,3 @@
   text-decoration: none;
   color: blue;
 }
-
-.footer-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: gray;
-  position: relative;
-}
-
-.btn-image {
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  line-height: 80px;
-}
