@@ -46,3 +46,9 @@
   margin-left: 245px;
   margin-bottom: 50px;
 }
+
+.btn {
+  text-decoration: none;
+  color: blue;
+  cursor: alias;
+}
