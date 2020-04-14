@@ -52,3 +52,10 @@
   color: blue;
   cursor: alias;
 }
+li {
+  list-style: none;
+}
+.skill-name {
+  font-size: 25px;
+  margin-right: 100px;
+}
