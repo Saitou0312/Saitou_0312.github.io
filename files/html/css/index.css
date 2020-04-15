@@ -54,6 +54,7 @@
 }
 .skill-list {
   list-style: none;
+  font-size: 30px;
 }
 .skill-name {
   padding-left: 75pt;
