@@ -57,13 +57,12 @@
   font-size: 30px;
 }
 .skill-name {
-  padding-left: 100pt;
-  margin-left: 50pt;
-  margin: auto;
+  padding-left: auto;
+  margin-left: auto;
   float: left;
 }
 .skill-dsc {
-  padding-right: 100pt;
-  margin-right: 50pt;
-  margin-left: 25pt;
+  padding-right: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
