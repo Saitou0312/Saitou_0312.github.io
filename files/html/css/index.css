@@ -52,6 +52,37 @@
   color: blue;
   cursor: alias;
 }
+.skill-list {
+  padding-left: 1em;
+}
+@media screen and (max-width: 800px;) {
+  .skill-list{
+    padding-left: 0.5em;
+  }
+}
+.skill-list span {
+  display: inline-block;
+}
+.skill-list li {
+  display: flex;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 800px;) {
+  .skill-list li {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
 .skill-name {
-  font-size: 25px;
+  font-weight: 500;
+  min-width: 160px;
+}
+@media screen and (max-width: 800px;) {
+  .skill-name {
+    width: 100%;
+  }
+}
+.skill-dsc {
+  color:#757a90;
+  font-size:14px;
 }
