@@ -52,8 +52,11 @@
   color: blue;
   cursor: alias;
 }
+.skill-list {
+  list-style: none;
+}
 .skill-name {
-  padding-left: 100pt;
+  padding-left: 75pt;
 }
 .skill-dsc {
   padding-left: 30pt;
