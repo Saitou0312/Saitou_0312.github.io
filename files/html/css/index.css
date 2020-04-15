@@ -66,6 +66,7 @@
 .skill-list li {
   display: flex;
   margin-bottom: 4px;
+  list-style-type: lower-alpha;
 }
 @media screen and (max-width: 800px;) {
   .skill-list li {
