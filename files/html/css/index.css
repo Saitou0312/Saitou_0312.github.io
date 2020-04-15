@@ -52,12 +52,6 @@
   color: blue;
   cursor: alias;
 }
-li {
-  list-style: none;
-}
 .skill-name {
   font-size: 25px;
-}
-body {
-  font-family: 'AXIS';
 }
