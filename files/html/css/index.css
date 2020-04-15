@@ -58,7 +58,7 @@
 }
 .skill-name {
   padding-left: 75pt;
-  float: left;
+  text-align: center;
 }
 .skill-dsc {
   padding-left: 30pt;
