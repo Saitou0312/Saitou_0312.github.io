@@ -11,3 +11,7 @@ body {
 .main {
   margin: 0;
 }
+.button_text {
+  color: black;
+  background: white;
+}
