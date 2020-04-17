@@ -15,6 +15,7 @@ body {
   color: black;
   background: white;
 }
-.btn {
+#btn {
   text-decoration: none;
+  color: blue;
 }
