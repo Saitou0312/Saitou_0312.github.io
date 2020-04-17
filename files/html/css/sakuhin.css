@@ -12,6 +12,7 @@ body {
   margin: 0;
 }
 .main a {
+  font-family: serif;
   color: black;
   background: white;
   text-decoration: none;
