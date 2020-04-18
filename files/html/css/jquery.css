@@ -5,13 +5,13 @@
 	margin: 10px 8px 10px 16px;
 	position: relative;
 }
-.change .caption {
+.change .caption2 {
 	font-size:		130%;
 	color:			#fff;
 	padding-top:		80px;
 	padding-left:		20px;
 }
-.change .mask {
+.change .mask2 {
 	width:			50%;	/* 画像の半分の大きさにする */
 	height:			100%;
 	position:		absolute;
@@ -22,7 +22,7 @@
 	-webkit-transition:	all 0.4s ease;
 	transition:		all 0.4s ease;
 }
-.change:hover .mask {
+.change:hover .mask2 {
 	margin-left:		0px;	/* 右にずらして表示する */
 }
 .change img {
@@ -31,4 +31,33 @@
 }
 .change:hover img {
 	margin-left:		50%;	/* 画像を半分サイズ、右にずらす */
+}
+.change2 {
+	width:			280px;
+	height:			188px;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+}
+.change2 .caption2 {
+	font-size:		130%;
+	text-align: 		center;
+	color:			#fff;
+	padding-top:		80px;
+}
+.change2 .mask2 {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease-out;
+	transition:		all 0.4s ease-out;
+}
+.change2:hover .mask2 {
+	opacity:		1;	/* マスクを表示する */
+	-webkit-transform:	scale(2);	/* 2倍に拡大 */
+	transform:		scale(2);
 }
