@@ -5,13 +5,13 @@
   margin: 10px 8px 10px 16px;
   position: relative;
 }
-#change #caption2 {
+#change #caption {
   font-size: 130%;
   color: #fff;
   padding-top: 80px;
   padding-left: 20px;
 }
-#change #mask2 {
+#change #mask {
   width: 50%; /* 画像の半分の大きさにする */
   height: 100%;
   position: absolute;
@@ -22,7 +22,7 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-#change:hover #mask2 {
+#change:hover #mask {
   margin-left: 0px; /* 右にずらして表示する */
 }
 #change img {
