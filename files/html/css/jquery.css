@@ -1,0 +1,34 @@
+.change {
+	width: 280px;
+	height: 188px;
+	overflow: hidden;
+	margin: 10px 8px 10px 16px;
+	position: relative;
+}
+.change .caption {
+	font-size:		130%;
+	color:			#fff;
+	padding-top:		80px;
+	padding-left:		20px;
+}
+.change .mask {
+	width:			50%;	/* 画像の半分の大きさにする */
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	margin-left:		-50%;	/* 枠の左に置いて表示させない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.change:hover .mask {
+	margin-left:		0px;	/* 右にずらして表示する */
+}
+.change img {
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.change:hover img {
+	margin-left:		50%;	/* 画像を半分サイズ、右にずらす */
+}
