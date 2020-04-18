@@ -32,3 +32,6 @@
 #change:hover img {
   margin-left: 50%; /* 画像を半分サイズ、右にずらす */
 }
+#text {
+  display: none;
+}
