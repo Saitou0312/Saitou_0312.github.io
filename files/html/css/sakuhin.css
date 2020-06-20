@@ -16,6 +16,7 @@ body {
   background: white;
   text-decoration: none;
   font-size: 30px;
+  cursor: pointer;
 }
 .button_text {
   font-family: Courier;
