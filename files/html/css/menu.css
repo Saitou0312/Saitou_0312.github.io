@@ -19,6 +19,7 @@
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 8px 8px #ccc;
+  cursor: pointer;
 }
 
 .menu-title {
