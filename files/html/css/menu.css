@@ -51,6 +51,7 @@
 }
 
 #scratch-link {
+  text-decoration: none;
   color: blue;
   cursor: pointer;
 }
