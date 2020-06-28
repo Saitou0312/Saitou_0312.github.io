@@ -21,8 +21,8 @@
   cursor: pointer;
 }
 
-.menu-image {
-  box-shadow: 0px 0px 6px 6px #ccc;
+.menu-image:hover {
+  box-shadow: 0px 0px 4px 4px #ccc;
 }
 
 .menu-title {
