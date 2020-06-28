@@ -2,3 +2,9 @@
   padding-left: 50px;
   border-radius: 50%;
 }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
