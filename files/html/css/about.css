@@ -1,3 +1,7 @@
 .name-image {
   border-radius: 50%;
 }
+
+.name {
+  word-wrap: break-word;
+}
