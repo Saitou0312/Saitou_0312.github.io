@@ -19,11 +19,11 @@
   margin-bottom: 20px;
   border-radius: 15px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.7s;
 }
 
 .menu-image:hover {
-  transition: 0.4s;
+  transition: 0.7s;
   box-shadow: 0px 0px 4px 4px #ccc;
 }
 
