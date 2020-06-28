@@ -3,5 +3,7 @@ a {
 }
 
 body {
-  font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック" !important;
+  /* font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック"; */
+  font-family: "Tsukushi A Round Gothic";
+  /* font-family: "筑紫A丸ゴシック"; */
 }
