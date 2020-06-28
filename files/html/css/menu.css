@@ -45,3 +45,17 @@
   color: blue;
   cursor: pointer;
 }
+
+.scratch-link {
+  text-align: center;
+}
+
+#scratch-link {
+  color: blue;
+  cursor: pointer;
+}
+
+#scratch-link:hover {
+  transition: 0.6s;
+  opacity: 0.6;
+}
