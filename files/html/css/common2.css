@@ -41,6 +41,7 @@
   padding: 16px 5px;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 .header-right a:hover{
   background-color: #e2f1ff;
