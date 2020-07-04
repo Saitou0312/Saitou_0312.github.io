@@ -12,7 +12,8 @@
 }
 
 .header {
-  padding-top: 130px;
+  padding-top: 260px;
+  text-align: center;
   height: 56px;
   width: 100%;
   /* box-shadow: 0 0 10px #dddddd; */
@@ -38,7 +39,7 @@
   line-height: 56px;
   color: #5a5c5f;
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 26px;
   padding: 16px 5px;
   text-decoration: none;
   cursor: pointer;
