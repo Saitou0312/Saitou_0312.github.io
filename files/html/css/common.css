@@ -18,8 +18,15 @@
   width: 100%;
   /* box-shadow: 0 0 10px #dddddd; */
   background-color: white;
+  position: fixed;
   top: 0;
   cursor: pointer;
+}
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
 }
 .clear {
   clear: both;
