@@ -5,7 +5,7 @@
     padding-bottom: 80px;
   }
   .top-title {
-    font-size: 60px;
+    font-size: 28px;
   }
   .menu-card {
     width: 50%;
@@ -40,5 +40,8 @@
   }
   .contact input, .contact textarea {
     width: 100%;
+  }
+  .button_text {
+    font-size: 30px;
   }
 }
