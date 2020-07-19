@@ -5,10 +5,14 @@
     padding-bottom: 80px;
   }
   .top-title {
-    font-size: 28px;
+    font-size: 26px;
   }
   .menu-card {
     width: 50%;
+  }
+  .bird img {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -43,6 +47,9 @@
   }
   .button_text {
     font-size: 30px;
+  }
+  .sakuhin {
+    font-size: 20px;
   }
   .nikoniko {
     margin-left: 75px !important;
