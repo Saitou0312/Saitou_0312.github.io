@@ -76,6 +76,6 @@
     margin-left: 15px !important;
   }
   .card_surface, .card_reverse {
-    margin-left: -5px;
+    margin-left: -5px !important;
   }
 }
