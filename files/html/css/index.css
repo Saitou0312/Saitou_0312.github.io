@@ -29,7 +29,8 @@
 }
 
 .main-image {
-  width: 450px;
+  width: 300px;
+  height: 280px;
   margin-bottom: 25px;
   box-shadow: 2px 2px 4px #b7b7b7;
   border-radius: 10px;
