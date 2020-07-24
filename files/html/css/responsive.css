@@ -29,6 +29,7 @@
   }
   .main-image {
     width: 280px;
+    margin-left: 0;
   }
   .main p {
     font-size: 13px;
