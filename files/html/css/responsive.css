@@ -29,7 +29,6 @@
   }
   .main-image {
     width: 280px;
-    margin-left: -20px !important;
   }
   .main p {
     font-size: 13px;
@@ -78,5 +77,8 @@
   }
   .card_surface, .card_reverse {
     margin-left: -5px !important;
+  }
+  .menu-image {
+    margin-left: -20px !important;
   }
 }
