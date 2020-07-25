@@ -85,4 +85,7 @@
     width: 300px !important;
     height: auto;
   }
+  .menu-image {
+    margin-left: -10px;
+  }
 }
