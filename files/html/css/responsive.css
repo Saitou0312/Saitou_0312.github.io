@@ -81,4 +81,7 @@
   .copy {
     margin-left: 25px !important;
   }
+  .big {
+    width: 300px;
+  }
 }
