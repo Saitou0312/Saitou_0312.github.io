@@ -57,6 +57,7 @@
 
 .scratch-link {
   text-align: center;
+  font-size: 13px;
 }
 
 #scratch-link {
@@ -64,7 +65,6 @@
   color: blue;
   cursor: pointer;
   transition: 0.6s;
-  font-size: 13px;
 }
 
 #scratch-link:hover {
