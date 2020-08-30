@@ -104,3 +104,25 @@ a {
 .overlay {
     height: 750px;
 }
+
+.sp-menu {
+    display: auto;
+}
+
+@media (max-width: 650px) {
+    .wani {
+        margin-left: -50px !important;
+    }
+    .katatumuri {
+        margin-left: -50px !important;
+    }
+    .kujira {
+        margin-left: -50px !important;
+    }
+    .cat {
+        margin-left: -50px !important;
+    }
+    .overlay {
+        height: 1500px !important;
+    }
+}
