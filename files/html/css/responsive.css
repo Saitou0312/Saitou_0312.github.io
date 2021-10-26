@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 670px) {
+  .box {
+    margin-left: -20px;
+  }
   .header-right {
     float: none;
     text-align: center;
