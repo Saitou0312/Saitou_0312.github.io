@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="files/html/css/common.css">
     <link rel="stylesheet" href="files/html/css/same.css">
     <link rel="stylesheet" href="files/html/css/acodion.css">
+    <link rel="stylesheet" href="files/html/css/btn.css">
     <link rel="stylesheet" href="files/html/css/push.css">
+    <link rel="stylesheet" href="files/html/css/bar.css">
+    <link rel="stylesheet" href="files/html/css/loading.css">
     <link rel="stylesheet" href="files/html/css/index.css">
     <link rel="stylesheet" href="files/html/css/page-top.css">
     <link rel="stylesheet" href="files/html/css/responsive.css">
@@ -24,6 +27,20 @@
     <meta property="fd:app_id" content="322560228551834">
   </head>
   <body>
+    <div id="splash">
+      <div id="splash_text"></div>
+    </div>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list">
+        <ul style="opacity: 1;" class="gnavi">
+          <li class="current"><a href="#about">About</a></li>
+          <li class="current"><a href="#arm-01">Arm 01</a></li>
+          <li class="current"><a href="#arm-02">Arm 02</a></li>
+          <li class="current"><a href="#arm-03">Arm 03</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- <div class="header">
       <div class="container">
         <div class="header-left">
@@ -41,20 +58,22 @@
           <br>
         </div>
       </div>
-      <div class="main">
-        <div class="container">
-          <img src="files/html/images/tutuki.svg" style="height: auto;">
-          <h3>Saitou_2017</h3>
-          <p class="a">プログラミングやレゴが好き</p>
+      <section id="about">
+        <div class="main">
+          <div class="container">
+            <img src="files/html/images/tutuki.svg" style="height: auto;">
+            <h3>Saitou_2017</h3>
+            <p class="a">プログラミングやレゴが好き</p>
+          </div>
         </div>
-      </div>
+      </section>
       <section id="area">
         <div class="main">
           <h1 style="font-size: 50px; margin-bottom: 50px;">自作フォント</h1>
           <div class="container">
             <ul class="accordion-area">
               <li>
-                <section>
+                <section id="arm-01">
                   <h2>Arm 01</h2>
                   <img class="main-image title btn03 pushdown" src="files/html/images/arm-01.png" alt="Arm 01" style="height: auto; cursor: pointer;">
                   <div class="box">
@@ -73,7 +92,7 @@
         <div class="container">
           <ul class="accordion-area">
             <li>
-              <section>
+              <section id="arm-02">
                 <h2>Arm 02</h2>
                 <img class="main-image title btn03 pushdown" src="files/html/images/arm-02.png" alt="Arm 02" style="height: auto; cursor: pointer;">
                 <div class="box">
@@ -91,7 +110,7 @@
         <div class="container">
           <ul class="accordion-area">
             <li>
-              <section>
+              <section id="arm-03">
                 <h2>Arm 03</h2>
                 <img class="main-image title btn03 pushdown" src="files/html/images/arm-03.png" alt="Arm 03" style="height: auto; cursor: pointer;">
                 <div class="box">
@@ -120,7 +139,10 @@
   <p id="page-top" class="js-pagetop scroll-top"><a href=""><img src="files/html/images/page-top.svg" id="page-top-img"></a></p>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
   <script src="files/html/js/page_top.js"></script>
   <script src="files/html/js/acodion.js"></script>
+  <script src="files/html/js/loading.js"></script>
+  <script src="files/html/js/bar.js"></script>
 </body>
 </html>
