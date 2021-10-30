@@ -1,0 +1,50 @@
+.gnavi a {
+    display: block;
+    /* padding: 10px 30px; */
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li {
+    margin-bottom: 20px;
+}
+
+.gnavi li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.gnavi li.current a, .gnavi li a:hover {
+    /* background: #000; */
+    color: #fff;
+}
+
+.gnavi li a:hover {
+    transition-delay: .5s;
+}
+
+.gnavi li a::before, .gnavi li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transition: all .5s;
+}
+
+.gnavi li a::before {
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.gnavi li a::after {
+    bottom: 0;
+    transform: translateX(100%);
+}
+
+.gnavi li a:hover::before, .gnavi li a:hover::after {
+    transform: translateX(0);
+}
