@@ -1,6 +1,6 @@
 var bar = new ProgressBar.Line(splash_text, {
     easing: 'easeInOut',
-    duration: Math.floor(Math.random() * 10000) + 1000,
+    duration: 3000,
     strokeWidth: 0,
     color: '#555',
     trailWidth: 0.2,
