@@ -2,25 +2,30 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>小学5年生の自由研究</title>
+    <title>小学6年生の自由研究</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ある小学5年生です。2020年の自由研究は自分のポートフォリオを作ることにしました。">
+    <meta name="description" content="ある小学6年生です。2022年の自由研究は自分のポートフォリオを作ることにしました。">
+    <link rel="stylesheet" href="files/html/css/slideshow.css">
     <link rel="stylesheet" href="files/html/css/common.css">
     <link rel="stylesheet" href="files/html/css/same.css">
     <link rel="stylesheet" href="files/html/css/acodion.css">
     <link rel="stylesheet" href="files/html/css/btn.css">
     <link rel="stylesheet" href="files/html/css/push.css">
     <link rel="stylesheet" href="files/html/css/bar.css">
+    <link rel="stylesheet" href="files/html/css/tenmoji.css">
+    <link rel="stylesheet" href="files/html/css/sakura.css">
     <link rel="stylesheet" href="files/html/css/timeline.css">
-    <link rel="stylesheet" href="files/html/css/loading.css">
+    <!-- <link rel="stylesheet" href="files/html/css/loading.css"> -->
     <link rel="stylesheet" href="files/html/css/index.css">
+    <link rel="stylesheet" href="files/html/css/reset.css">
     <link rel="stylesheet" href="files/html/css/page-top.css">
     <link rel="stylesheet" href="files/html/css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <meta property="og:url" content="article">
     <meta property="og:title" content="自由研究">
     <meta property="og:site_name" content="自由研究">
-    <meta property="og:description" content="ある小学5年生です。2020年の自由研究は自分のポートフォリオを作ることにしました。">
+    <meta property="og:description" content="ある小学6年生です。2022年の自由研究は自分のポートフォリオを作ることにしました。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saitou0312.github.io/Saitou_0312.github.io/index.html">
     <meta property="og:image" content="https://saitou0312.github.io/Saitou_0312.github.io/files/html/images/noronoroman3.svg">
@@ -29,18 +34,23 @@
     <meta property="fd:app_id" content="322560228551834">
   </head>
   <body style="font-family: 'Hiragino Marugo ProN', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;">
-    <div id="splash">
+    <!-- <div id="splash">
       <div id="splash_text"></div>
-    </div>
+    </div> -->
     <div class="openbtn"><span></span><span></span><span></span></div>
     <nav id="g-nav">
       <div id="g-nav-list">
         <ul style="opacity: 1;" class="gnavi">
           <li class="current"><a href="#about">About</a></li>
           <li class="current"><a href="#timeline">TimeLine</a></li>
-          <li class="current"><a href="#arm-01">Arm 01</a></li>
-          <li class="current"><a href="#arm-02">Arm 02</a></li>
-          <li class="current"><a href="#arm-03">Arm 03</a></li>
+          <li class="current"><a href="#gallery">Gallery</a></li>
+          <li class="current"><a href="#pickaxe">Pickaxe</a></li>
+          <li class="current"><a href="#sword">Sword</a></li>
+          <li class="current"><a href="#power-up">Power Up</a></li>
+          <li class="current"><a href="#wall">Wall</a></li>
+          <li class="current"><a href="#hole">Hole</a></li>
+          <li class="current"><a href="#rocket">Rocket</a></li>
+          <li class="current"><a href="#item-villager">Item becomes a villager</a></li>
         </ul>
       </div>
     </nav>
@@ -55,14 +65,16 @@
         <div class="clear"></div>
       </div>
     </div> -->
-      <div class="alert alert-info" role="alert" style="text-align: center;">
+      <!-- <div class="alert alert-info" role="alert" style="text-align: center;">
         新フォント Arm 04!!
-      </div>
+      </div> -->
+      <div id="particles-js"></div>
       <div class="main-visual">
         <div class="container">
-          <h1 class="top-title" style="padding-bottom: 200px;" id="box2" class
-          box>小学<span class="count-down count-size">5</span>年生の自由研究</h1>
-          <br>
+          <!-- <h1 class="top-title" style="padding-bottom: 200px;" id="box2" class
+          box>小学<span class="count-down count-size">6</span>年生の自由研究</h1> -->
+          <canvas id="particle"></canvas>
+          <!-- <br> -->
         </div>
       </div>
       <section id="about">
@@ -109,8 +121,15 @@
               </li>
               <li>
                 <dl>
-                  <dt>2021年</dt>
+                  <dt>2021年(5年生)</dt>
                   <dd>フォント&ウェブサイト</dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2022年(6年生)</dt>
+                  <dd>マイクラのコマンドの研究&ウェブサイト</dd>
                 </dl>
                 <span class="border-line"></span>
               </li>
@@ -118,23 +137,49 @@
           </div>
         </div>
       </section>
+      <section id="gallery">
+        <div class="wrapper">
+          <h1>Gallery</h1>
+          <!-- <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>	 -->
+          <ul class="gallery">
+            <li><img src="files/html/images/pickaxe.png" alt=""></li>
+            <li><img src="files/html/images/sword.png" alt=""></li>
+            <li><img src="files/html/images/strength.png" alt=""></li>
+            <li><img src="files/html/images/wall.png" alt=""></li>
+            <li><img src="files/html/images/bighole.png" alt=""></li>
+            <li><img src="files/html/images/minihouse.png" alt=""></li>
+            <li><img src="files/html/images/pickaxe.png" alt=""></li>
+            <li><img src="files/html/images/item_villager.png" alt=""></li>
+          </ul>
+          <ul class="choice-btn">
+            <li><img src="files/html/images/Netherite_Pickaxe.png" alt=""></li>
+            <li><img src="files/html/images/Netherite_Sword.png" alt=""></li>
+            <li><img src="files/html/images/Iron_Sword.png" alt=""></li>
+            <li><img src="files/html/images/Block_of_Iron.webp" alt=""></li>
+            <li><img src="files/html/images/rocket.png" alt=""></li>
+            <li><img src="files/html/images/house.png" alt=""></li>
+            <li><img src="files/html/images/Netherite_Pickaxe.png" alt=""></li>
+            <li><img src="files/html/images/villager.webp" alt=""></li>
+          </ul>
+        </div>
       <section id="area">
         <div class="main">
-          <h1 style="font-size: 50px; margin-bottom: 50px;">自作フォント</h1>
+          <h1 style="font-size: 50px; margin-bottom: 50px;">コマンド(Ver 1.18.2)</h1>
           <div class="container">
             <ul class="accordion-area">
               <li>
-                <section id="arm-01">
-                  <h2>Arm 01</h2>
-                  <img class="main-image title btn03 pushdown" src="files/html/images/arm-01.png" alt="Arm 01" style="height: auto; cursor: pointer;">
+                <section id="pickaxe">
+                  <h2>最強のツルハシ</h2>
+                  <img class="main-image title" src="files/html/images/Netherite_Pickaxe.png" alt="" style="height: auto;">
                   <div class="box">
-                    <img src="files/html/images/arm-01-all.png" alt="一覧です" class="all-font">
+                    <!-- <p>1. /give @p minecraft:netherite_pickaxe{Enchantments:[{id:fortune,lvl:9999},{id:mending,lvl:9999},{id:unbreaking,lvl:9999},{id:efficiency,lvl:9999}]} -->
+                    <!-- </p> -->
                   </div>
                 </section>
               </li>
             </ul>
             <p>
-              英語と数字などが対応しています。
+              1. /give @p minecraft:netherite_pickaxe{Enchantments:[{id:fortune,lvl:9999},{id:mending,lvl:9999},{id:unbreaking,lvl:9999},{id:efficiency,lvl:9999}]}
             </p>
           </div>
         </div>
@@ -143,17 +188,17 @@
         <div class="container">
           <ul class="accordion-area">
             <li>
-              <section id="arm-02">
-                <h2>Arm 02</h2>
-                <img class="main-image title btn03 pushdown" src="files/html/images/arm-02.png" alt="Arm 02" style="height: auto; cursor: pointer;">
+              <section id="sword">
+                <h2>最強の剣</h2>
+                <img class="main-image title" src="files/html/images/Netherite_Sword.png" alt="" style="height: auto;">
                 <div class="box">
-                  <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
                 </div>
               </section>
             </li>
           </ul>
           <p>
-            その他の記号などが対応しています。
+            1. /give @p minecraft:netherite_sword{Enchantments:[{id:sharpness,lvl:9999},{id:mending,lvl:9999},{id:unbreaking,lvl:9999},{id:efficiency,lvl:9999},{id:knockback,lvl:9999},{id:looting,lvl:9999}]}
           </p>
         </div>
       </div>
@@ -161,17 +206,17 @@
         <div class="container">
           <ul class="accordion-area">
             <li>
-              <section id="arm-03">
-                <h2>Arm 03</h2>
-                <img class="main-image title btn03 pushdown" src="files/html/images/arm-03.png" alt="Arm 03" style="height: auto; cursor: pointer;">
+              <section id="power-up">
+                <h2>攻撃力アップ</h2>
+                <img class="main-image title" src="files/html/images/Iron_Sword.png" alt="" style="height: auto;">
                 <div class="box">
-                  <img src="files/html/images/arm-03-all.png" alt="一覧です" class="all-font">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
                 </div>
               </section>
             </li>
           </ul>
           <p>
-            ひらがなが対応しています。
+            1. /effect give @p strength 100000 255
           </p>
         </div>
       </div>
@@ -179,72 +224,172 @@
         <div class="container">
           <ul class="accordion-area">
             <li>
-              <section id="arm-04">
-                <h2>Arm 04</h2>
-                <img class="main-image title btn04 pushdown" src="files/html/images/arm-04.png" alt="Arm 04" style="height: auto; cursor: pointer;">
+              <section id="wall">
+                <h2>壁</h2>
+                <img class="main-image title" src="files/html/images/Block_of_Iron.webp" alt="" style="height: auto;">
                 <div class="box">
-                  <img src="files/html/images/arm-04-all.png" alt="一覧です" class="all-font">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
                 </div>
               </section>
             </li>
           </ul>
           <p>
-            カタカナが対応しています。
+            1. execute at @e[name=wall] run fill ~ ~ ~ ~30 ~15 ~ minecraft:iron_block
+            <br>
+            2. kill @e[name=wall]
           </p>
         </div>
       </div>
-      <h1 style="text-align: center;">フォントの比較</h1>
-      <table class="table table-bordered table-striped table-hover" style="margin-top: 40px; margin-left: 100px; width: 1200px;">
-        <thead>
-          <tr>
-            <th>No.</th>
-            <th>フォント名</th>
-            <th>対応している文字</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Arm 01</td>
-            <td>英語と数字など</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Arm 02</td>
-            <td>その他の記号など</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Arm 03</td>
-            <td>ひらがな</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Arm 04</td>
-            <td>カタカナ</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="main">
+        <div class="container">
+          <ul class="accordion-area">
+            <li>
+              <section id="hole">
+                <h2>落とし穴</h2>
+                <img class="main-image title" src="files/html/images/hole.png" alt="" style="height: auto;">
+                <div class="box">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
+                </div>
+              </section>
+            </li>
+          </ul>
+          <p>
+            1. execute at @e[name=bighole] run fill ~ ~-1 ~ ~10 ~-1 ~10 gravel
+            <br>
+            2. execute at @e[name=bighole] run fill ~ ~-2 ~ ~10 70 ~10 air
+            <br>
+            3. execute at @e[name=bighole] run fill ~ ~-1 ~ ~10 0 ~10 air
+            <br>
+            4. execute at @e[name=bighole] run fill ~ ~-1 ~ ~10 -64 ~10 air
+            <br>
+            5. kill @e[name=bighole]
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <ul class="accordion-area">
+            <li>
+              <section id="rocket">
+                <h2>ロケット</h2>
+                <img class="main-image title" src="files/html/images/rocket.png" alt="" style="height: auto;">
+                <div class="box">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
+                </div>
+              </section>
+            </li>
+          </ul>
+          <p>
+            1. execute at @e[name=ROCKET] run setblock ~2 ~ ~ minecraft:quartz_block
+            <br>
+            2. execute at @e[name=ROCKET] run setblock ~-2 ~ ~ minecraft:quartz_block
+            <br>
+            3. execute at @e[name=ROCKET] run setblock ~ ~ ~2 minecraft:quartz_block
+            <br>
+            4. execute at @e[name=ROCKET] run setblock ~ ~ ~-2 minecraft:quartz_block
+            <br>
+            5. execute at @e[name=ROCKET] run setblock ~2 ~1 ~ minecraft:slime_block
+            <br>
+            6. execute at @e[name=ROCKET] run setblock ~-2 ~1 ~ minecraft:slime_block
+            <br>
+            7. execute at @e[name=ROCKET] run setblock ~ ~1 ~2 minecraft:slime_block
+            <br>
+            8. execute at @e[name=ROCKET] run setblock ~ ~1 ~-2 minecraft:slime_block
+            <br>
+            9. execute at @e[name=ROCKET] run setblock ~1 ~1 ~ minecraft:slime_block
+            <br>
+            10. execute at @e[name=ROCKET] run setblock ~-1 ~1 ~ minecraft:slime_block
+            <br>
+            11. execute at @e[name=ROCKET] run setblock ~ ~1 ~-1 minecraft:slime_block
+            <br>
+            12. execute at @e[name=ROCKET] run setblock ~ ~1 ~1 minecraft:slime_block
+            <br>
+            13. execute at @e[name=ROCKET] run setblock ~ ~2 ~1 minecraft:slime_block
+            <br>
+            14. execute at @e[name=ROCKET] run setblock ~ ~2 ~-1 minecraft:slime_block
+            <br>
+            15. execute at @e[name=ROCKET] run setblock ~1 ~2 ~ minecraft:slime_block
+            <br>
+            16. execute at @e[name=ROCKET] run setblock ~-1 ~2 ~ minecraft:slime_block
+            <br>
+            17. execute at @e[name=ROCKET] run setblock ~ ~1 ~ minecraft:observer[facing=down]
+            <br>
+            18. execute at @e[name=ROCKET] run setblock ~ ~2 ~ minecraft:sticky_piston[facing=up]
+            <br>
+            19. execute at @e[name=ROCKET] run setblock ~ ~3 ~ minecraft:slime_block
+            <br>
+            20. execute at @e[name=ROCKET] run setblock ~ ~4 ~ minecraft:slime_block
+            <br>
+            21. execute at @e[name=ROCKET] run setblock ~ ~5 ~ minecraft:slime_block
+            <br>
+            22. execute at @e[name=ROCKET] run setblock ~ ~6 ~ minecraft:quartz_block
+            <br>
+            23. execute at @e[name=ROCKET] run setblock ~1 ~4 ~ minecraft:observer[facing=up]
+            <br>
+            24. execute at @e[name=ROCKET] run setblock ~-1 ~4 ~ minecraft:observer[facing=up]
+            <br>
+            25. execute at @e[name=ROCKET] run setblock ~ ~4 ~1 minecraft:observer[facing=up]
+            <br>
+            26. execute at @e[name=ROCKET] run setblock ~ ~4 ~-1 minecraft:observer[facing=up]
+            <br>
+            27. execute at @e[name=ROCKET] run setblock ~ ~3 ~-1 minecraft:sticky_piston[facing=down]
+            <br>
+            28. execute at @e[name=ROCKET] run setblock ~ ~3 ~1 minecraft:sticky_piston[facing=down]
+            <br>
+            29. execute at @e[name=ROCKET] run setblock ~1 ~3 ~ minecraft:sticky_piston[facing=down]
+            <br>
+            30. execute at @e[name=ROCKET] run setblock ~-1 ~3 ~ minecraft:sticky_piston[facing=down]
+            <br>
+            31. kill @e[name=ROCKET]
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <ul class="accordion-area">
+            <li>
+              <section id="item-villager">
+                <h2>アイテムが村人になる</h2>
+                <img class="main-image title" src="files/html/images/villager.webp" alt="" style="height: auto;">
+                <div class="box">
+                  <!-- <img src="files/html/images/arm-02-all.png" alt="一覧です" class="all-font"> -->
+                </div>
+              </section>
+            </li>
+          </ul>
+          <p>
+            1. execute at @e[type=item] run summon minecraft:villager
+            <br>
+            2. kill @e[type=item]
+          </p>
+        </div>
+      </div>
       <div class="footer">
         <div class="container">
           <div class="footer-left">
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="小学5年生の自由研究です" data-url="https://saitou0312.github.io/Saitou_0312.github.io/index.html" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           <div class="footer-right">
-            <p class="copy" style="color: black; font-size: 18px; margin-left: 850px;">&copy; 2021 Saitou</p>
+            <p class="copy" style="color: black; font-size: 18px; margin-left: 850px;">&copy; 2022 Saitou</p>
           </div>
           <div class="clear"></div>
         </div>
       </div>
     </div>
-  <p id="page-top" class="js-scroll scroll-top scroll-view"><a href=""><img src="files/html/images/scroll.svg" id="page-top-img"></a></p>
-  <p id="page-top" class="js-pagetop scroll-top"><a href=""><img src="files/html/images/page-top.svg" id="page-top-img"></a></p>
+  <p id="page-top" class="js-scroll scroll-top scroll-view"><a href=""><img src="files/html/images/scroll.png" id="page-top-img"></a></p>
+  <p id="page-top" class="js-pagetop scroll-top"><a href=""><img src="files/html/images/page-top.png" id="page-top-img"></a></p>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
   <script src="files/html/js/page_top.js"></script>
-  <script src="files/html/js/acodion.js"></script>
-  <script src="files/html/js/loading.js"></script>
+  <!-- <script src="files/html/js/acodion.js"></script> -->
+  <!-- <script src="files/html/js/loading.js"></script> -->
+  <script src="files/html/js/particleText.js"></script>
+  <script src="files/html/js/particleText_sakura.js"></script>
   <script src="files/html/js/bar.js"></script>
+  <script src="files/html/js/sakura.js"></script>
+  <script src="files/html/js/slideshow.js"></script>
+  <script src="files/html/js/tenmoji.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
   <script src="files/html/js/count.js"></script>
   <script src="files/html/js/timeline.js"></script>
