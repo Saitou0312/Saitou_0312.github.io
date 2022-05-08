@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+.container{
+  position: relative;
+}
+
+h1{
+  position: absolute;
+  top:200px;
+  left:200px;
+  font-size: 3rem;
+}
+
+p{
+  position: absolute;
+  bottom:20px;
+  z-index: 2;
+  text-align: center;
+  width:100%;
+}
+
+a{
+  color:#666;
+}
+
+/*========= 流体シェイプを動かす ===============*/
+.fluid {
+  width:40vh;/*横幅*/
+  height: 40vh;/*縦幅*/
+  background:#00ffb3;/*背景色*/
+  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+}
+
+@keyframes fluidrotate {  
+    
+0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    background:#00e1ff;/*背景色*/
+  }
+14% {
+    background:#00b3ff;/*背景色*/
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+}
+28% {
+    background:#000dff;/*背景色*/
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    background:#5500ff;/*背景色*/
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+  background:#6600ff;/*背景色*/
+  border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    background:#c800ff;/*背景色*/
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    background:#ff0099;/*背景色*/
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+}
+    
+}
