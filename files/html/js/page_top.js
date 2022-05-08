@@ -20,7 +20,7 @@ $('.scroll-top a').click(function() {
     } else {
         $('body, html').animate({
             scrollTop: 0
-        }, 1500, 'easeInOutQuint');
+        }, 2000, 'easeInOutQuint');
     }
     return false;
 });
